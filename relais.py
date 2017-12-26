@@ -1,0 +1,21 @@
+from IOPi import IOPi
+import time
+bus = IOPi(0x20)
+bus.set_port_direction(0, 0x00)
+bus.write_port(0, 0x00)
+bus.write_pin(1, 1)
+bus.write_pin(1, 1)
+time.sleep(1)
+bus.write_pin(1, 0)
+time.sleep(1)
+bus.write_pin(1, 1)
+time.sleep(1)
+bus.write_pin(1, 1)
+bus.write_pin(1, 0)
+bus.write_pin(1, 1)
+bus.write_pin(1, 0)
+bus.write_pin(1, 1)
+bus.write_pin(1, 0)
+bus.write_pin(1, 0)
+bus.write_pin(1, 1)
+ 
