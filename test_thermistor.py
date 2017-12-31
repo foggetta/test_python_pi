@@ -20,6 +20,7 @@ def thermistor_t(V):
     
 while True:
     Vr=adcdac.read_adc_voltage(2, 0)    
-    print("Vr="+str(Vr)+" - temp="+str(thermistor_t(Vr)))
+    print("Vr="+str(Vr)+" - temp="+str(thermistor_t(Vr))+"\n")
+    
     time.sleep(0.5)
    
